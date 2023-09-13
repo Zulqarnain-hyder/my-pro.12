@@ -1,2 +1,2 @@
 # my-pro.12
-My consultant website
+My project website
