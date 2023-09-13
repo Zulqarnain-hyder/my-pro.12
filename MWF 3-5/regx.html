@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <input type="text" id="uname" placeholder="Username"><br>
+        <label for="" id="valid" style="color: rgb(221, 46, 46); visibility: hidden;">Invalid Username or
+            Password</label>
+        <br><br>
+        <button type="submit" onclick="validate()">Submit</button>
+    </form>
+
+    <script>
+        function validate() {
+            var username = document.getElementById("uname").value;
+            var regx = /[0-5]/;
+            if (regx.test(username)) {
+                alert("Submited")
+                document.getElementById("valid").style.visibility = "hidden";
+            }
+            else {
+                document.getElementById("valid").style.visibility = "visible";
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
